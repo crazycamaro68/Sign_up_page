@@ -1,3 +1,43 @@
-h1 {
-    color:blue;
+body{
+    margin: 0px;
+}
+#BG_Container {
+    display: flex;
+    flex-direction: row;
+}
+#BG_IMG {
+    height: 100vh;
+    width: 50vw;
+}
+#left_BG {
+    position: relative;
+    text-align: center;
+    width: 50vw;
+}
+#left_BG > #credit {
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    color: white;
+    font-size: 1vmax;
+}
+#Title{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    opacity: 50%;
+    height: 2.5vmax;
+}
+#Inside_Title {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 2vmax;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+#right_BG{
+    width: 50vw;
 }
