@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     margin: 0px;
 }
@@ -8,6 +10,7 @@ body{
 #BG_IMG {
     height: 100vh;
     width: 50vw;
+    margin-bottom: -5px;
 }
 #left_BG {
     position: relative;
@@ -20,6 +23,7 @@ body{
     left: 5%;
     color: white;
     font-size: 1vmax;
+
 }
 #Title{
     position: absolute;
@@ -35,9 +39,87 @@ body{
     top: 10%;
     left: 40%;
     font-size: 2vmax;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Roboto Condensed", Impact, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
 }
 #right_BG{
     width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top_box, .middle_box, .bottom_box{
+    min-height: 33.3vh;
+}
+.top_box{
+    background-color: #eeeeee;
+}
+.top_box_text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.25vmax;
+    position: absolute;
+    top: 8%;
+    left: 53%;
+    width: 45vw;
+    
+}
+.icon>img{
+    width: 5vmax;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+.middle_box{
+    background-color: #F9F9F9;
+}
+.bottom_box{
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.final_box > button {
+    width: 15vw;
+    height: 10vh;
+    margin: 50px;
+    border-radius: 25px;
+    border: 3px solid #F9F9F9;
+    background-color: black;
+    color: #F9F9F9;
+    font-size: 1.75vmax;
+}
+.final_box > button:hover{
+    width: 15.5vw;
+    height: 10.5vh;
+}
+.final_box > p{
+    margin-left: 55px;
+    margin-top: -25px;
+}
+.form_box >h2{
+    text-align: center;
+}
+.form_line{
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1vmax;
+}
+.left_form{
+    display: flex;
+    flex-direction: column;
+}
+.right_form{
+    display: flex;
+    flex-direction: column;
+}
+.input_boxes:hover{
+    border: 2px solid rgb(0, 119, 255);
+}
+.bottom_box>p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    margin-right: 25px;
 }
