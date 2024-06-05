@@ -53,21 +53,23 @@ body{
 }
 .top_box{
     background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
 }
 .top_box_text{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.25vmax;
-    position: absolute;
-    top: 8%;
-    left: 53%;
-    width: 45vw;
-    
+    margin-left:50px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+#header_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -25px;
 }
 .icon>img{
     width: 5vmax;
-    position: absolute;
-    top: 5%;
-    left: 90%;
 }
 .middle_box{
     background-color: #F9F9F9;
@@ -123,3 +125,20 @@ body{
     align-items: end;
     margin-right: 25px;
 }
+@media (max-width: 800px) {
+    #BG_Container{
+        display: flex;
+        flex-direction: column;
+    }
+    #left_BG{
+        width: 100vw;
+    }
+    #BG_IMG{
+        width: 100vw;
+        height: 50vh;
+    }
+    #right_BG{
+        width: 100vw;
+        height: 50vh;
+    }
+  }
